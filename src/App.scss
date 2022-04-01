@@ -1,0 +1,89 @@
+@import './variables';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(123,178,228);
+  background: linear-gradient(177deg, rgba(150,91,201,1) 11%, rgba(69,127,183,1) 33%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .btns{
+    display: flex;
+    gap:15px;
+    button{
+      background-color:rgba(150,91,201,1);
+      color:white;
+      border:none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover{
+        background:rgb(51, 107, 160);
+      }
+    }
+    .active{
+      background:rgb(51, 107, 160);
+    }
+  }
+  .subtitle{
+    font-weight:bold
+  }
+}
+.card {
+  max-width: 520px;
+  padding: 30px;
+  margin:20px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(240, 248, 255, 0.241);
+}
+img {
+  width: 150px;
+  margin: 20px;
+  border-radius: 20px;
+}
+h2 {
+  color: black;
+  text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+}
+a {
+  color: #0b0089;
+  text-decoration: none;
+}
